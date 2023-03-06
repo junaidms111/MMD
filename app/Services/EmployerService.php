@@ -15,7 +15,7 @@ class EmployerService
 
 
     public function getHeaders(){
-        return ['Authorization' => 'Token 5def7c6031d72aac484059316aa943cef5e8cd14', 'Content-Type' => 'application/json'];
+        return ['Authorization' => 'Token '.env('API_AUTH_TOKEN'), 'Content-Type' => 'application/json'];
     }
 
     public function all(){
